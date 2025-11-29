@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("w1.jpg");
+  background-size: 1600px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #121212;
+  transition: background 0.5s, color 0.5s;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-image: url("water8.jpeg");
+  background-size: 1600px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(14, 13, 13);
+}
+
+h1, h2 {
+  margin: 10px 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background: #4e4a4a;
+}
+
+/* Toggle Button */
+#darkToggle {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+  animation: fadeIn 1s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Calculator Section */
+#calculator {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.calc-box {
+  display: inline-block;
+  background: #eff0dd;
+  border: 3px solid #c4db12;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(198, 112, 112, 0.15);
+  text-align: center;
+  padding: 10px;
+  max-width: fit-content;
+  min-width: fit-content;
+  max-height: 550px;
+}
+
+.dark-mode .calc-box {
+  background: #4e4a4a;
+}
+
+/* Result Card */
+#result .card {
+  display: inline-block;
+  text-align: left;
+  margin-top: 12px;
+  padding: 10px 15px;
+  border: 2px dashed #0da6e8;
+  border-radius: 10px;
+  background: #e1f99f;
+  max-width: 100%;
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.dark-mode #result .card {
+  background: #ec0707;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background: #0077cc;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #f9fafb;
+  transform: translateY(-2px);
+}
+
+/* Counter */
+#counter {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#litersSaved {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.dark-mode #litersSaved {
+  background: white;
+  color: #121212;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Chatbot Button */
+#chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0077cc;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Chatbox */
+#chatbox {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+  display: none;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#chatbox.show {
+  display: flex;
+  opacity: 1;
+}
+
+#chatHeader {
+  background: #0077cc;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+#chatBody {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.user-msg {
+  background: #e0f7fa;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.bot-msg {
+  background: #f1f1f1;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#chatFooter {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#chatFooter button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  border: none;
+  background: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #c4db12;
+  color: #121212;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Calculator Section Styling container */
+.shadow-box {
+  background-color: #070607;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
