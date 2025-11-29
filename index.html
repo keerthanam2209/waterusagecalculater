@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Footprint Project</title>
+
+  <!-- Global stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific styles -->
+  <style>
+    header {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    nav {
+      background-color: #023e8a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.7rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+    .shadow-box {
+      border-radius: 15px;
+      box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      width: 80%;
+      margin: 30px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Water Footprint Awareness</h1>
+    <p>Towards responsible and sustainable water usage</p>
+    <button id="darkToggle">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="waterfootprints.html">Water Footprints</a>
+    <a href="impacts.html">Impacts</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Water Footprints</h2>
+    <p>
+      The <strong>water footprint</strong> of a product or activity is the total volume of water used directly and indirectly to produce it. 
+      It is divided into three key components:
+    </p>
+    <ul style="list-style:none; padding-left:0;">
+      <li><strong>🌊 Blue Water:</strong> Fresh surface and groundwater used for irrigation, livestock drinking water, and industrial processes.</li>
+      <li><strong>🌱 Green Water:</strong> Rainwater stored in the soil and absorbed by plants during growth (rain-fed agriculture).</li>
+      <li><strong>🏭 Grey Water:</strong> Water required to dilute pollutants (fertilizers, chemicals, waste) to safe levels.</li>
+    </ul>
+    <p>
+      Example: A cup of coffee (~200 L total) → 50 L Blue, 120 L Green, 30 L Grey. <br> 
+      Knowing these categories helps us understand where water is being consumed or polluted, 
+      and how we can reduce our footprint through smarter choices.
+    </p>
+  </section>
+
+  <!-- Animated Counter -->
+  <section id="counter">
+    <p>Estimated liters of water you can save this month by small daily changes:</p>
+    <div id="litersSaved">0</div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section id="calculator">
+    <div class="shadow-box">
+      <div class="calc-box">
+        <h2>Check Water Footprint</h2>
+        <label for="itemSelect">Select an item:</label><br>
+        <select id="itemSelect"></select><br>
+        <button onclick="showFootprint()">Calculate</button>
+      </div>
+
+      <div id="result"></div>
+      <canvas id="chart" width="280" height="280"></canvas>
+    </div>
+  </section>
+
+  <!-- Chatbot UI (optional, for chatbot.js) -->
+  <div id="chatbot-btn">💬</div>
+  <div id="chatbox">
+    <div id="chatHeader">
+      <span>Water Assistant</span>
+      <span id="closeChat" style="cursor:pointer;">×</span>
+    </div>
+    <div id="chatBody"></div>
+    <div id="chatFooter">
+      <input type="text" id="chatInput" placeholder="Ask about water savings...">
+      <button id="sendChat">Send</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Water Footprint Project | All Rights Reserved</p>
+    <p>Working together to conserve our planet’s most vital resource — water.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
