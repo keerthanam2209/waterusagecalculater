@@ -1,0 +1,207 @@
+{
+  "toileflush": {
+    "name": "Toilet Flush (1 time)",
+    "total": 9,
+    "blue": 9,
+    "green": 0,
+    "grey": 0,
+    "tip": "Use dual-flush toilets to save ~50% water.",
+    "equivalents": [
+      "One flush = 9 L water"
+    ],
+    "reason": "Conventional toilets use 6–12 liters per flush depending on design.",
+    "suggestion": "Skip one toilet flush by using greywater or collect AC water to clean floors."
+  },
+  "dishwash": {
+    "name": "Hand Dishwashing (10 mins)",
+    "total": 100,
+    "blue": 100,
+    "green": 0,
+    "grey": 0,
+    "tip": "Fill the sink instead of letting water run.",
+    "equivalents": [
+      "🍽 10-min dishwashing = 100 L water"
+    ],
+    "reason": "Running tap uses ~10 liters per minute. Filling a basin reduces wastage.",
+    "suggestion": "Water your plants using leftover rinse water to balance household use."
+  },
+  "brushing": {
+    "name": "Brushing Teeth (2 mins, tap running)",
+    "total": 12,
+    "blue": 12,
+    "green": 0,
+    "grey": 0,
+    "tip": "Turn off tap while brushing to save up to 10 L.",
+    "equivalents": [
+      "🪥 1 brushing = 12 L water"
+    ],
+    "reason": "A running tap wastes ~6 liters per minute.",
+    "suggestion": "Turn off the tap while brushing for a week to save equivalent water."
+  },
+  "laundry": {
+    "name": "Washing Machine (1 load)",
+    "total": 70,
+    "blue": 70,
+    "green": 0,
+    "grey": 0,
+    "tip": "Run full loads and use efficient machines.",
+    "equivalents": [
+      "👕 1 load laundry = 70 L water",
+      "≈ 1 shower"
+    ],
+    "reason": "Standard machines use 50–100 L per wash depending on model and cycle.",
+    "suggestion": "Reuse washing machine greywater for floor cleaning or gardening."
+  },
+  "garden": {
+    "name": "Garden Watering (30 mins hose)",
+    "total": 500,
+    "blue": 500,
+    "green": 0,
+    "grey": 0,
+    "tip": "Water early morning or evening to reduce evaporation.",
+    "equivalents": [
+      "🌱 30-min watering = 500 L water"
+    ],
+    "reason": "Garden hoses use ~15 liters per minute, which adds up quickly during watering.",
+    "suggestion": "Install a rain barrel system to collect and reuse rainwater for plants."
+  },
+  "coffee": {
+    "name": "Coffee (1 cup)",
+    "total": 200,
+    "blue": 50,
+    "green": 120,
+    "grey": 30,
+    "tip": "Reduce by 1 cup/day → save 73,000 L per year.",
+    "equivalents": [
+      "☕ 1 cup of coffee = 200 L water",
+      "≈ 4 minutes of shower"
+    ],
+    "reason": "Coffee beans require a lot of irrigation during farming and large amounts of water for processing after harvest.",
+    "suggestion": "Plant one tree every month to offset coffee-related water footprint."
+  },
+  "rice": {
+    "name": "Rice (1 kg)",
+    "total": 2500,
+    "blue": 500,
+    "green": 1800,
+    "grey": 200,
+    "tip": "Switch to millet or quinoa occasionally to save water.",
+    "equivalents": [
+      "🍚 1 kg rice = 2,500 L water",
+      "≈ 33 showers"
+    ],
+    "reason": "Rice is usually grown in flooded fields, which consume huge volumes of water compared to other grains.",
+    "suggestion": "Replace one rice meal per week with millet or wheat-based food."
+  },
+  "Red Meat": {
+    "name": "Red Meat (1 kg)",
+    "total": 15400,
+    "blue": 550,
+    "green": 14500,
+    "grey": 350,
+    "tip": "Replacing beef with chicken saves ~80% water.",
+    "equivalents": [
+      "🍔 1 red meat burger = water for 2 months of daily showers",
+      "≈ 154 buckets of water"
+    ],
+    "reason": "Cattle need large amounts of drinking water and feed, and growing animal feed (corn, soy) requires massive irrigation.",
+    "suggestion": "Skip one red meat meal per week to reduce annual water use by thousands of liters."
+  },
+  "tshirt": {
+    "name": "Cotton T-Shirt",
+    "total": 2700,
+    "blue": 700,
+    "green": 1800,
+    "grey": 200,
+    "tip": "Buy fewer clothes & prefer organic cotton.",
+    "equivalents": [
+      "👕 1 cotton T-shirt = 2,700 L water",
+      "≈ 3 years of drinking water"
+    ],
+    "reason": "Cotton crops are highly water-intensive, and additional water is used in textile dyeing and finishing processes.",
+    "suggestion": "Reuse or donate clothes instead of buying new ones frequently."
+  },
+  "milk": {
+    "name": "Milk (1 liter)",
+    "total": 1000,
+    "blue": 100,
+    "green": 800,
+    "grey": 100,
+    "tip": "Try plant-based alternatives like oat or soy milk.",
+    "equivalents": [
+      "🥛 1 glass of milk = water for 30 minutes of showering"
+    ],
+    "reason": "Cows need a lot of drinking water and feed, and producing feed crops like corn/soy requires heavy irrigation.",
+    "suggestion": "Replace dairy with plant-based milk 2–3 times a week."
+  },
+  "egg": {
+    "name": "Egg (1 piece)",
+    "total": 200,
+    "blue": 30,
+    "green": 150,
+    "grey": 20,
+    "tip": "Reducing egg consumption helps lower footprint.",
+    "equivalents": [
+      "🥚 1 egg = 200 L water",
+      "≈ 4 glasses of milk"
+    ],
+    "reason": "Hens consume grain-based feed grown with irrigation, plus water is used for poultry care and egg processing.",
+    "suggestion": "Use plant-based egg substitutes once a week to reduce water use."
+  },
+  "potato": {
+    "name": "Potato (1 kg)",
+    "total": 250,
+    "blue": 30,
+    "green": 200,
+    "grey": 20,
+    "tip": "Opt for locally grown potatoes to save transport water footprint.",
+    "equivalents": [
+      "🥔 1 kg potatoes = 250 L water",
+      "≈ 3 days of drinking water"
+    ],
+    "reason": "Potatoes are relatively water-efficient, but irrigation is still required during farming.",
+    "suggestion": "Compost food scraps to return nutrients and moisture to the soil."
+  },
+  "shower": {
+    "name": "Shower (7 minutes)",
+    "total": 65,
+    "blue": 65,
+    "green": 0,
+    "grey": 0,
+    "tip": "Take 5-minute showers instead of 10 to cut water use by half.",
+    "equivalents": [
+      "🚿 One 7-min shower = 65 L water",
+      "≈ 2 days of drinking water"
+    ],
+    "reason": "A standard shower uses 9–10 liters of water per minute. Shortening shower time saves large amounts of water daily.",
+    "suggestion": "Install a low-flow showerhead to cut water use by 40%."
+  },
+  "bikewash": {
+    "name": "Bike Wash (1 time)",
+    "total": 50,
+    "blue": 50,
+    "green": 0,
+    "grey": 0,
+    "tip": "Use a bucket instead of a running hose to save up to 40 L.",
+    "equivalents": [
+      "🏍 One bike wash = 50 L water",
+      "≈ 1 day of drinking water"
+    ],
+    "reason": "Using a running hose wastes water quickly, while bucket washing reduces consumption significantly.",
+    "suggestion": "Wash bikes using collected rainwater or leftover rinse water."
+  },
+  "carwash": {
+    "name": "Car Wash (1 time)",
+    "total": 300,
+    "blue": 300,
+    "green": 0,
+    "grey": 0,
+    "tip": "Opt for commercial car washes that recycle water.",
+    "equivalents": [
+      "🚗 One car wash = 300 L water",
+      "≈ 5 showers"
+    ],
+    "reason": "Washing a car with a running hose can use 300–500 liters of water. Professional services often recycle water to cut usage.",
+    "suggestion": "Use a bucket or eco-friendly car wash system once a week instead of daily cleaning."
+  }
+}
